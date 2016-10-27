@@ -1,0 +1,257 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body {
+		font-family: Arial, sans-serif;
+		background-color: #dddddd;
+		color: rgba(0,0,0,1);	
+		}		
+		
+div#interface {
+		width: 1000px;/*largura*/
+		background-color: #ffffff;	
+		margin: -21px auto 0px auto;/*margin:up,right,down and left*/
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /*deslocamento horizontal,vertical,espaçamento da sombra e cor.*/
+		padding: 10px;/*espaçamento interno da div*/
+		
+}
+
+header#cabecalho img#icone {
+		position: absolute;/*deixar o icone como pos. absoluta para coloca-lo um pouco abaixo do menu de navagacao*/
+		right: 150px;
+		top: 68px;
+}	
+
+header#cabecalho {
+		border-bottom: 1px #606060 solid; /*largura da borda,cor e formato.*/ 
+		height: 145px;
+		background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 90px;/*colocar a logo do glass no cabecalho*/
+}
+
+header#cabecalho h1 {
+		font-family: 'FonteLogo', sans-serif;
+		font-size: 30pt;
+		color: #606060;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+		padding: 0px;
+		margin-bottom: 0px;
+}
+
+header#cabecalho h2 {
+		font-family: Arial, sans-serif;
+		color: #888888;
+		font-size: 15pt;
+		padding: 0px;
+		margin-top: 0px;
+}
+	
+		
+p {
+		text-align: justify;
+		text-indent: 25px;		
+		}	
+		
+a {
+		color: #606060;
+		text-decoration: none;
+}				
+		
+		/* ==============FORMATACAO DE IMAGENS COM LEGENDAS================ */
+
+figure.foto-legenda {
+		position: relative;/*posicao relativa*/		
+		border: 8px solid white;
+		box-shadow: 1px 1px 4px black;/* sombra na imagem*/
+}
+
+figure.foto-legenda img {
+		width: 100%; /* tamanho da imagem*/
+		height: 100%;/* '' '' '' '' ''  */
+}
+
+figure.foto-legenda figcaption {
+		opacity: 0;		
+		position: absolute; /*Posicao absoluta dentro do seu container*/
+		top: 0px;/*topo*/
+		background-color: rgba(0,0,0,0.4);/*BG transparente*/
+		color: white;
+		width: 100%;/*tamanho do BG do caption*/
+		height: 100%;/*tamanho do BG do caption*/
+		padding: 10px;/*espaço dentro da legenda*/
+		box-sizing:border-box; /*criar um box dentro da borda*/
+		transition: opacity 1s; /*criar um tempo de transicao entre tonalidade da opacidade*/
+}
+
+figure.foto-legenda:hover figcaption { /*DISPARAR UMA FORMATACAO ESPECIFICA QUANDO PASSAR O MOUSE POR CIMA DO OBJETO*/
+		opacity: 1;
+}
+
+/*  ============================= FORMATACAO DO MENU ==========================================*/
+
+nav#menu {
+		display: block;/*para fazer com que o navegador flutue, é preciso colocar o nav como bloco*/
+}
+
+nav#menu ul { /*sempre que for ID colocar uma cerquilha*/
+		list-style: none;/*retirar marcadores*/
+		text-transform: uppercase;/*transformar texto em maiusculo*/
+		position: absolute;/*posicao absoluta em 'ul' para nao extravazar posicao de 'li'*/
+		top: -22px;/*topo*/
+		left:480px;/*esquerda*/
+}
+
+nav#menu li {
+		display: inline-block;/*fazer um bloco ser exibido em uma mesma linha*/
+		background-color: #dddddd;
+		padding: 10px; /*controlar o espaço dentro da caixa*/
+		margin: 5px;/*controla o espaço da margem do lado direito*/
+		transition: background-color 1s; /*a transicao entre cores de fundo irá durara 1s*/
+}
+
+nav#menu li:hover { /*trocar de cor de fundo quando passar o mouse*/
+		background-color: #606060;
+}
+
+nav#menu h1 {
+		display: none;/*esconder 'menu principal'*/
+}
+
+nav#menu a {
+		color: #000000;/*preto*/
+		text-decoration: none;/*retirar underline do link*/
+}
+
+nav#menu a:hover {
+		color: #ffffff;/*branco*/
+}
+
+section#corpo {
+		display: block;/*utilizar como bloco para poder flutuar*/
+		width: 520px;
+		float: left;/*flutuar a esquerda*/
+		border-right: 1px solid #606060;/*criar uma borda lateral direita na section*/
+		padding: 15px;
+}
+
+article#noticia-principal h2{
+		font-size: 12pt;
+		color: #606060;
+		background-color: #dddddd;
+		padding: 5px 0px 5px 10px;
+		margin: 10px 0px 10px 0px; 
+}
+
+header#cabecalho-artigo h1 {
+		font-family: 'FonteLogo', sans-serif;
+		font-size: 20pt;
+		color: #606060;
+		margin-bottom: 0px;
+		margin-top: 0px;
+}
+
+header#cabecalho-artigo h2 {
+		font-size: 13pt;
+		color: #cecece;
+		background-color: #ffffff;
+		margin: 0px;
+}
+
+header#cabecalho-artigo h3 {
+		font-size: 12pt;
+		color: #606060;
+}
+
+.direita {
+		text-align: right;
+		margin-bottom: 0px;
+}
+
+table#tabelaspec {
+		border: 1px solid #606060;
+		border-spacing: 0px;/*espaço bordas da tabela*/
+		margin-left: auto;/*centralizar tabela*/
+		margin-right: auto;/*centralizar tabela*/
+}
+
+table#tabelaspec td {
+		border: 1px solid #606060;/*borda dos dados da tabela*/
+		padding: 10px;/*espaço iterno da tabela*/
+		text-align: center;
+}
+
+table#tabelaspec td.ce{/*formatar TD da esquerda*/
+		color: #ffffff;
+		background-color: #606060;
+		vertical-align: top;
+		font-weight: bold;
+		text-align: right;		
+}
+
+table#tabelaspec td.cd{/*formatar TD da direita*/
+		background-color: #cecece;
+		text-align: left;
+}
+
+table#tabelaspec caption {/*formatar caption da tabela*/
+		color: #888888;
+		font-size: 13pt;
+		font-weight: bolder;
+}
+
+table#tabelaspec caption span {/*deslocar parte do caption para que fique menor ao lado direito da tabela*/
+		display: block;
+		float: right;
+		color: #000000;
+		font-size: 8pt;
+		margin-top: 10px;	
+}
+
+aside#lateral {
+		display: block;
+		width: 420px;
+		float: right;/*flutuar a direita*/
+		padding-right: 5px;
+		background-color: #dddddd;
+		padding: 10px;
+		margin-top: 10px;
+		box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+		
+}
+
+aside#lateral h1 {
+		font-family: 'FonteLogo', sans-serif;
+		font-size: 20pt;
+		color: #606060;
+		margin-top: 0px;
+}
+
+aside#lateral h2 {
+		background-color: #606060;
+		font-size: 13pt;
+		color: #ffffff;
+		padding: 5px;
+}
+
+footer#rodape {
+		clear: both;/*mostra rodape fora da div*/
+		border-top: 1px solid #606060;/*borda no topo do rodape*/
+		
+		
+}
+
+footer#rodape p {
+		text-align: center;
+		
+}
+
+footer#rodape a {
+		text-decoration: none;
+}
+
+a:hover {
+		text-decoration: underline;
+}
+

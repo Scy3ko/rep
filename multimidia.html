@@ -1,0 +1,67 @@
+<!DOCTYPE html> <!-- -->
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Tudo sobre Google Glass</title>
+	<link rel="stylesheet" type="text/css" href="_css/estilo.css"/> <!--PUXANDO UM ESTILO CSS PARA O O SOURCE DO HTML-->
+	<link rel="stylesheet" type="text/css" href="_css/media.css"/>
+</head>
+<script lang="javascript" src="_javascript/funcoes.js"> </script> <!--CHAMANDO O FUNCOES.JS PARA O HTML-->
+
+<body>
+<div id="interface"> <!--CRIANDO DIVISAO DO SITE -->
+
+	<header id="cabecalho"> 
+		<hgroup> <!-- GRUPO DE TITULOS -->
+			<h1>Google Glass</h1>
+			<h2>A revolução do Google está chegando</h2>
+		</hgroup>
+
+		<img id="icone" src="_imagens/multimidia.png">
+	<nav id="menu">
+		<h1>Menu Principal</h1>
+		<ul> 
+			<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html">Home</a>  </li>
+			<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
+			<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html"><a href="fotos.html">Fotos</a></li>
+			<li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html"><a href="multimidia.html">Multimídia</a></li>
+			<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html"><a href="fale-conosco.html">Fale conosco</a></li>
+		</ul>
+	</nav>
+	
+	</header>
+
+
+<section id="corpo-full">
+
+	<article id="noticia-principal">
+		<header id="cabecalho-artigo">
+			<hgroup>
+				<h3>Glass > Multimídia</h3>
+				<h1>Sons e Vídeos</h1>
+				<h2>por Luan Rabelo</h2>
+				<h3 class="direita">Atualizado em 05/Outubro/2016</h3>
+			</hgroup>
+		</header>
+
+		<div id="tv-radio">
+			<video id="filme" controls="controls" poster="_imagens/video-mini03.jpg"><!--INSERIR TAG 'CONTROLS' PARA CONCRETIZAR ADD-VIDEO-->
+				<source src="_media/getting-started.mp4" type="video/mp4"/><!--INSERINDO VIDEOS-->
+				Não foi possível carregar o vídeo!
+			</video>				
+			<audio id="musica" controls="controls"><!--INSERIR TAG 'CONTROLS' PARA CONCRETIZAR ADD-AUDIO-->
+				<source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/><!--INSERINDO AUDIO-->
+				Não foi possível carregar o áudio!			
+			</audio>
+				
+		</div>
+	</article>
+</section>	
+
+<footer id="rodape">
+	<p>Copyright 2016 - by Luan Rabelo
+	<br/><a href="https://www.facebook.com/luan.batista.560" target="_blank">Facebook</a> | <a href="https://twitter.com/vhf_rock" target="_blank">Twitter</a></p>
+</footer>
+</div>
+</body>
+</html>
